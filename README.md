@@ -1,5 +1,5 @@
 # Introduction
-This is a bootstrap setting up Vim with many modern plugins. That add some 
+This is a bootstrap setting up Vim with many modern plugins.<br/>
 You can execute below commands to boost your workspace:
 ```
 cd ./src
