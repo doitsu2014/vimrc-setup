@@ -26,6 +26,7 @@ let g:ale_fixers = {
 \   'css': ['prettier'],
 \   'json': ['prettier'],
 \   'html': ['prettier'],
+\   'yaml': ['prettier'],
 \   'vim': ['remove_trailing_lines', 'trim_whitespace'],
 \   'rust': ['rustfmt']
 \}
