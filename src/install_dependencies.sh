@@ -13,7 +13,7 @@ if [ "$(uname)" == "Darwin"  ]; then
     brew install curl
     brew install git
     brew install build-essential cmake
-    brew install python python3 python3-pip
+    brew install python python3
     brew install nodejs npm
     brew isntall unzip
 
