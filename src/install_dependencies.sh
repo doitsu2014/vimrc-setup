@@ -25,7 +25,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux"  ]; then
     sudo apt-get install nodejs npm -y
     sudo apt-get install unzip -y
     sudo apt-get install software-properties-common -y
-    sudo apt-get install python-dev python-pip python3-dev python3-pip
+    sudo apt-get install python-dev python-pip python3-dev
 fi
 
 bash ./install_language_servers.sh
