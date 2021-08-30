@@ -18,7 +18,8 @@ let g:ale_linters = {
 \   'python': ['flake8'],
 \   'vim': ['vim-language-server'],
 \   'rust': ['rustc', 'analyzer'],
-\   'sh': ['language_server']
+\   'sh': ['language_server'],
+\   'markdown': ['mdl']
 \}
 
 let g:ale_fixers = {
@@ -28,7 +29,8 @@ let g:ale_fixers = {
 \   'html': ['prettier'],
 \   'yaml': ['prettier'],
 \   'vim': ['remove_trailing_lines', 'trim_whitespace'],
-\   'rust': ['rustfmt']
+\   'rust': ['rustfmt'],
+\   'markdown': ['pandoc']
 \}
 
 let g:ale_fix_on_save=1
@@ -51,3 +53,6 @@ nmap <Leader>di <Plug>VimspectorBalloonEval
 xmap <Leader>di <Plug>VimspectorBalloonEval"
 let g:vimspector_install_gadgets = ['vscode-cpptools', 'CodeLLDB']
 "=========================+++++++++++++++++++++===================================
+"
+nnoremap <silent> <Leader>szu :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>szd :exe "resize " . (winheight(0) * 2/3)<CR>

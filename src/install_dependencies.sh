@@ -16,6 +16,7 @@ if [ "$(uname)" == "Darwin"  ]; then
     brew install python python3
     brew install nodejs npm
     brew isntall unzip
+    brew install ruby
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux"  ]; then
     # this if statement is used to install dependency packages of ubuntu which has the version > 16.x.x
@@ -26,6 +27,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux"  ]; then
     sudo apt-get install unzip -y
     sudo apt-get install software-properties-common -y
     sudo apt-get install python-dev python-pip python3-dev
+    sudo apt-get install ruby -y
 fi
 
 bash ./install_language_servers.sh
